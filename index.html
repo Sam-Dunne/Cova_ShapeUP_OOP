@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeUp ShapeOut</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="input-section-container" class="mx-5">
+            <!-- TopHeader -->
+            <div id="input-header" class="text-center">
+                <h2>Add a Shape!</h1>
+                <h4 class="text-center">Click a shape once for its measurements or Double Click to remove it</h4>
+                
+            </div>
+            <!-- Rectangle Input and Button -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary bg-info text-white" type="button" id="btn-add-rectangle">
+                        Add Rectangle
+                    </button>
+                </div>
+                <input type="number" class="form-control" id="rectangle-height-input-field" placeholder="height px"
+                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <input type="number" class="form-control" id="rectangle-width-input-field" placeholder="width px"
+                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <!-- Square Input and Button -->
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="square-side-length-input-field"
+                    placeholder="side length px" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-info text-white" type="button" id="btn-add-square">
+                        Add Square
+                    </button>
+                </div>
+            </div>
+            <!-- Circle Input and Button -->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary bg-info text-white" type="button" id="btn-add-circle">
+                        Add Circle
+                    </button>
+                </div>
+                <input type="number" class="form-control" id="circle-radius-input-field" placeholder="radius px"
+                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <!-- Triangle Input and Button -->
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="triangle-height-input-field" placeholder="height px"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-info text-white" type="button" id="btn-add-triangle">
+                        Add Triangle
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- bottom section: shape container and measurement container -->
+        <div id="btm-section-container">
+            <div id="shapes-container"></div>
+            <div id="result-measurement-container">
+                <!-- shape  -->
+                <div class='param-container'>
+                    <h4 id="param-header-shape">Shape</h4>
+                    <h5 id="rtn-param-shape"></h5>
+                </div>
+                <!-- height  -->
+                <div class='param-container'>
+                    <h4 id="param-header-height">Height</h4>
+                    <h5 id="rtn-param-height"></h5>
+                </div>
+                <!-- width  -->
+                <div class='param-container'>
+                    <h4 id="param-header-width">Width</h4>
+                    <h5 id="rtn-param-width"></h5>
+                </div>
+                <!-- area  -->
+                <div class='param-container'>
+                    <h4 id="param-header-area">Area</h4>
+                    <h5 id="rtn-param-area"></h5>
+                </div>
+                <!-- Perimeter  -->
+                <div class='param-container'>
+                    <h4 id="param-header-perimeter">Perimeter</h4>
+                    <h5 id="rtn-param-perimeter"></h5>
+                </div>
+                <!-- radius  -->
+                <div class='param-container'>
+                    <h4 id="param-header-radius">Radius</h4>
+                    <h5 id="rtn-param-radius"></h5>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

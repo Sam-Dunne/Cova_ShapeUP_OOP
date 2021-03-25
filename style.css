@@ -1,0 +1,111 @@
+#shapes-container{
+    max-height: 600px;
+    min-height: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    background-color: rgba(96, 255, 221, 0.486) ;
+    margin-right: 0px; 
+    border: 1px solid black;
+    position: relative;
+}
+
+#input-section-container {
+    border: 3px solid black;
+    padding: 5px 150px;
+    background-color:  rgb(181, 171, 241);
+    box-shadow: gray;
+    
+}
+#page-container{
+    background-color: rgb(235, 235, 235);
+    height: 150vh;
+    
+}
+
+#btm-section-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#result-measurement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    border: 1px solid black;
+    width: 450px;
+    height: 600px;
+    min-width: 250;
+    background-color: rgb(181, 171, 241);
+}
+
+.param-container {
+    border: 2px solid black;
+    background-color: rgb(230, 227, 253);
+    height: 90px;
+    margin: 0 10px;
+}
+
+#parameters{
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0 -2px;
+    margin-top: -2px;
+    background-color: rgb(255, 255, 255);
+}
+h5 {
+    margin-top: 10px;
+    float: right;
+    margin-right: 50px;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.shape {
+  
+    position: relative;
+}
+
+.square {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.616);
+    position: absolute;
+    /* top: 445px;
+    left: 410px */
+}
+
+.rectangle {
+    cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.664);
+    position: absolute;
+        
+}
+
+.circle {
+    cursor: pointer;
+    background-color: rgba(128, 0, 128, 0.562);
+    border-radius: 50%;
+    position: absolute;
+ 
+}
+
+.triangle {
+    position: absolute;
+    cursor: pointer;
+     width: 0px ;
+	height: 0px ;
+    /*max-height: 599;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 0, 0.623); */
+    /* top: 350px;
+    left: 560px; }
+    /* .triangle {
+        height: 0px;
+        width: 0px;
+        border-top: 150px solid transparent;
+        border-right: 150px solid yellow;
+      } */
+    }
